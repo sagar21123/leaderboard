@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: #270108;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background-color: #5d0505;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+        }
+
+        .mid_header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            gap: 0.3rem;
+        }
+
+        .main_heading {
+            font-weight: 600;
+            color: rgb(252, 222, 100);
+        }
+
+        .sub_heading {
+            font-weight: 300;
+            font-size: 0.8rem;
+        }
+
+        .info_details {
+            margin: 2rem 3rem;
+            color: white;
+            letter-spacing: 0.02em;
+        }
+
+        .info_items {
+            list-style-type: disc;
+        }
+
+        .info_head {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .info_row {
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 0.2rem;
+            margin-left: 1rem;
+        }
+
+        .hand_img {
+            margin-right: 5px;
+            height: 10px;
+            width: 16px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            border: 2px solid white;
+            margin: 1rem 0;
+            /* Border color set to a dark shade of gray */
+        }
+
+        th,
+        td {
+            border: 1px solid white;
+            /* Border color set to a lighter shade of gray */
+            padding: 8px;
+            text-align: center;
+        }
+
+        .note {
+            /* font-size: 0.8rem; */
+            /* color: rgb(252, 222, 100); */
+            /* text-wrap: nowrap; */
+            font-weight: 100;
+            font-size: 0.7rem;
+            margin-bottom: 1rem;
+
+        }
+
+
+        @media (max-width : 768px) {
+            .header {
+                padding: 1rem;
+                background-size: cover;
+            }
+
+            .mid_header {
+                gap: 0.3rem;
+            }
+
+            .main_heading {
+                font-size: 1.3rem;
+                text-wrap: nowrap;
+                color: rgb(252, 222, 100);
+            }
+
+            .sub_heading {
+                text-wrap: nowrap;
+                font-size: 0.9rem;
+            }
+            .info_details{
+                margin: 2rem;
+            }
+
+            table {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="mid_header">
+            <h2 class="main_heading">DIWALI LEADERBOARD</h2>
+            <h4 class="sub_heading">Win Guaranteed 1gm <b style="color: rgb(252, 222, 100); ">GOLD</b> coin</h4>
+        </div>
+    </div>
+    <div class="info_details">
+        <h3 class="info_head">Information details : </h3>
+        <ul class="info_items">
+            <li class="info_row">Play cash games on any Rummy tables to
+                qualify.</li>
+            <li class="info_row">For Leaderboard, Rank will be
+                decided by his/her net winnings after playing the games.</li>
+            <li class="info_row">Leaderboard will start from 9th
+                Nov 12:00 AM to 15th Nov 11:59 PM.</li>
+            <li class="info_row">Prizes to eligible winners will be
+                credited to their Real Cash ( Deposit ) accounts within 48 hrs.</li>
+            <!-- <li class="info_row">Players with the same point scores
+                will equally share the sum of the corresponding prize amount.</li> -->
+                <li class="info_row">If the net winnings are same then who score last consider up in the ranking.</li>
+            <li class="info_row">All standard Rummyxl.com terms and conditions apply.</li>
+            <li class="info_row">The decision of the Rummyxl.com management shall be final and binding in case of any
+                disputes.</li>
+            <li class="info_row">All govt taxes as applicable if any.</li>
+        </ul>
+    </div>
+    <div class="info_details" style="padding-bottom: 0.2rem;">
+        <h3 class="info_head">Leaderboard Prizes Breakup : </h3>
+        <table>
+            <tr>
+                <th>Prize</th>
+                <th>Rank</th>
+            </tr>
+            <tr>
+                <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">1gm Gold Coin
+                </td>
+                <td>1st</td>
+            </tr>
+            <tr>
+                <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">0.5gm Gold Coin
+                </td>
+                <td>2nd</td>
+            </tr>
+            <tr>
+                <td style="display: flex; align-items:  center; justify-content: center; gap: 0.3rem;">20gm Silver Coin
+                </td>
+                <td>3rd</td>
+            </tr>
+            <tr>
+                <td>₹501/- Real Cash</td>
+                <td>4-10</td>
+            </tr>
+            <tr>
+                <td>₹201/- Real Cash</td>
+                <td>11-50</td>
+            </tr>
+            <tr>
+                <td>₹101/- Real Cash</td>
+                <td>51-100</td>
+            </tr>
+            <tr>
+                <td>₹51/- Real Cash</td>
+                <td>101-150</td>
+            </tr>
+            <tr>
+                <td>₹25/- Real Cash</td>
+                <td>151-200</td>
+            </tr>
+            <tr>
+                <td>₹10/- Real Cash</td>
+                <td>201-300</td>
+            </tr>
+        </table>
+        <p class="note">*For any queries, contact our Support Team <u>9205479988</u>.</p>
+    </div>
+</body>
+
+</html>
